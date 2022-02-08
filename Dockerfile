@@ -24,12 +24,14 @@ RUN flutter config --enable-web
 RUN mkdir /app/
 COPY . /app/
 WORKDIR /app/
-RUN flutter build web
-
+# RUN flutter build web
+RUN dart pub global activate webdev
+RUN dart pub get
+RUN webdev serve
 # Record the exposed port
-EXPOSE 5000
+EXPOSE 8080
 
 # make server startup script executable and start the web server
-RUN ["chmod", "+x", "/app/server/server.sh"]
+#RUN ["chmod", "+x", "/app/server/server.sh"]
 
-ENTRYPOINT [ "/app/server/server.sh"]
+#ENTRYPOINT [ "/app/server/server.sh"]
