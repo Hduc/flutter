@@ -10,7 +10,7 @@ RUN apt-get clean
 RUN git clone https://github.com/flutter/flutter.git /usr/local/flutter
 
 # Set flutter environment path
-ENV PATH="/usr/local/flutter/bin:/usr/local/flutter/bin/cache/dart-sdk/bin:${PATH}"
+ENV PATH="/usr/local/flutter/bin:/usr/local/flutter/bin/cache/dart-sdk/bin:$HOME/.pub-cache/bin:${PATH}"
 
 # Run flutter doctor
 RUN flutter doctor
