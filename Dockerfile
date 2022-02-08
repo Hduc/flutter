@@ -10,7 +10,7 @@ RUN apt-get clean
 RUN git clone https://github.com/flutter/flutter.git /usr/local/flutter
 
 # Set flutter environment path
-ENV PATH="/usr/local/flutter/bin:/usr/local/flutter/bin/cache/dart-sdk/bin:$HOME/.pub-cache/bin:${PATH}"
+ENV PATH="/usr/local/flutter/bin:/usr/local/flutter/bin/cache/dart-sdk/bin:${PATH}"
 
 # Run flutter doctor
 RUN flutter doctor
@@ -26,6 +26,9 @@ COPY . /app/
 WORKDIR /app/
 # RUN flutter build web
 RUN dart pub global activate webdev
+
+ENV PATH="$HOME/.pub-cache/bin:${PATH}"
+
 RUN dart pub get
 RUN webdev serve --release
 
