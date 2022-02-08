@@ -27,7 +27,8 @@ WORKDIR /app/
 # RUN flutter build web
 RUN dart pub global activate webdev
 RUN dart pub get
-RUN webdev serve
+RUN webdev serve --release
+
 # Record the exposed port
 EXPOSE 8080
 
