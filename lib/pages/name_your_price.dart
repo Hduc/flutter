@@ -16,14 +16,14 @@ final products = [
   ProductInfo('Điện thoại iphone 11 Pro Max', 50)
 ];
 
-class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+class NameYourPricePage extends StatefulWidget {
+  const NameYourPricePage({Key? key}) : super(key: key);
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<NameYourPricePage> createState() => _NameYourPricePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _NameYourPricePageState extends State<NameYourPricePage> {
   int _currentProductIndex = 0;
   int? _inputtedPrice;
   String _result = '';

@@ -1,4 +1,4 @@
-import 'package:app/pages/home_page.dart';
+import 'package:app/pages/name_your_price.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
@@ -9,7 +9,7 @@ void main() {
     Finder priceInput() => find.byKey(const Key('priceInput'));
     Finder resultText() => find.byKey(const Key('result'));
     testWidgets('Show first product name', (WidgetTester tester) async {
-      await tester.pumpWidget(const MaterialApp(home: HomePage()));
+      await tester.pumpWidget(const MaterialApp(home: NameYourPricePage()));
       expect(find.text(products[0].name), findsOneWidget);
 
       for (var i = 1; i < 5; i++) {
@@ -28,7 +28,7 @@ void main() {
     });
 
     testWidgets('Show result after each click', (WidgetTester tester) async {
-      await tester.pumpWidget(const MaterialApp(home: HomePage()));
+      await tester.pumpWidget(const MaterialApp(home: NameYourPricePage()));
 
       expect(nextBtn(), findsNothing); // kiểm tra không hiện nút next
       expect(resultText(), findsNothing); // kiểm tra không hiện kể quả check
