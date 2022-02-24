@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Demo Css in Flutter
+    </title>
+    <style>
+        .greybox {
+            background-color: #e0e0e0;
+            /* grey 300 */
+            width: 320px;
+            height: 240px;
+            font: 900 24px Georgia;
+            text-align: center;
+        }
+
+        .greybox1 {
+            background-color: #e0e0e0;
+            /* grey 300 */
+            width: 320px;
+            height: 240px;
+            font: 900 24px Roboto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .greybox2 {
+            background-color: #e0e0e0;
+            /* grey 300 */
+            width: 320px;
+            height: 240px;
+            font: 900 24px Roboto;
+            position: relative;
+        }
+
+        .redbox2 {
+            background-color: #ef5350;
+            /* red 400 */
+            padding: 16px;
+            color: #ffffff;
+            position: absolute;
+            top: 24px;
+            left: 24px;
+        }
+
+
+        .greybox3 {
+            background-color: #e0e0e0;
+            /* grey 300 */
+            width: 320px;
+            height: 240px;
+            font: 900 24px Roboto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .redbox3 {
+            background-color: #ef5350;
+            /* red 400 */
+            padding: 16px;
+            color: #ffffff;
+            transform: rotate(20deg);
+        }
+
+        .greybox4 {
+            background-color: #e0e0e0;
+            /* grey 300 */
+            width: 320px;
+            height: 240px;
+            font: 900 24px Roboto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .redbox4 {
+            background-color: #ef5350;
+            /* red 400 */
+            padding: 16px;
+            color: #ffffff;
+            transform: scale(1.5);
+        }
+
+        .greybox5 {
+            background-color: #e0e0e0;
+            /* grey 300 */
+            width: 320px;
+            height: 240px;
+            font: 900 24px Roboto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .redbox5 {
+            padding: 16px;
+            color: #ffffff;
+            background: linear-gradient(180deg, #ef5350, rgba(0, 0, 0, 0) 80%);
+        }
+
+        .greybox6 {
+            background-color: #e0e0e0;
+            /* gray 300 */
+            width: 320px;
+            height: 240px;
+            font: 900 24px Roboto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .redbox6 {
+            background-color: #ef5350;
+            /* red 400 */
+            padding: 16px;
+            color: #ffffff;
+            border-radius: 8px;
+        }
+
+        .greybox7 {
+            background-color: #e0e0e0;
+            /* grey 300 */
+            width: 320px;
+            height: 240px;
+            font: 900 24px Roboto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .redbox7 {
+            background-color: #ef5350;
+            /* red 400 */
+            padding: 16px;
+            color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8),
+                0 6px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .greybox8 {
+            background-color: #e0e0e0;
+            /* gray 300 */
+            width: 320px;
+            height: 240px;
+            font: 900 24px Roboto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .redcircle8 {
+            background-color: #ef5350;
+            /* red 400 */
+            padding: 16px;
+            color: #ffffff;
+            text-align: center;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+        }
+
+        .greybox9 {
+            background-color: #e0e0e0;
+            /* grey 300 */
+            width: 320px;
+            height: 240px;
+            font: 900 24px Roboto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .redbox9 {
+            background-color: #ef5350;
+            /* red 400 */
+            padding: 16px;
+            color: #ffffff;
+            letter-spacing: 4px;
+        }
+
+        .greybox10 {
+            background-color: #e0e0e0;
+            /* grey 300 */
+            width: 320px;
+            height: 240px;
+            font: 900 24px Roboto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .redbox10 {
+            background-color: #ef5350;
+            /* red 400 */
+            padding: 16px;
+            color: #ffffff;
+        }
+
+        .redbox10 em {
+            font: 300 48px Roboto;
+            font-style: italic;
+        }
+
+        .greybox11 {
+            background-color: #e0e0e0;
+            /* grey 300 */
+            width: 320px;
+            height: 240px;
+            font: 900 24px Roboto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .redbox11 {
+            background-color: #ef5350;
+            /* red 400 */
+            padding: 16px;
+            color: #ffffff;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="greybox">
+        Aligning text
+    </div>
+
+    <hr />
+    <div class="greybox1">
+        Centering components
+    </div>
+
+    <hr />
+    <div class="greybox2">
+        <div class="redbox2">
+            Manipulating position and size
+        </div>
+    </div>
+
+
+    <hr />
+    <div class="greybox3">
+        <div class="redbox3">
+            Rotating components
+        </div>
+    </div>
+
+    <hr />
+    <div class="greybox4">
+        <div class="redbox4">
+            Scaling components
+        </div>
+    </div>
+
+    <hr />
+    <div class="greybox5">
+        <div class="redbox5">
+            Applying a linear gradient
+        </div>
+    </div>
+
+    <hr />
+    <div class="greybox6">
+        <div class="redbox6">
+            Manipulating shapes
+        </div>
+    </div>
+
+    <hr />
+    <div class="greybox7">
+        <div class="redbox7">
+            Adding box shadows
+        </div>
+    </div>
+
+    <hr />
+    <div class="greybox8">
+        <div class="redcircle8">
+            Making circles and ellipses
+        </div>
+    </div>
+
+    <hr />
+    <div class="greybox9">
+        <div class="redbox9">
+            Manipulating text
+        </div>
+    </div>
+
+    <hr />
+    <div class="greybox10">
+        <div class="redbox10">
+            Making inline formatting <em>changes</em>
+        </div>
+    </div>
+
+    <hr />
+    <div class="greybox11">
+        <div class="redbox11">
+            Lorem ipsum dolor sit amet, consec etur
+        </div>
+    </div>
+</body>
+
+</html>
